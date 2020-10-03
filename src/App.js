@@ -21,7 +21,7 @@ function App() {
 
 
   const searchWeather = () => {
-    Axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=48f89ec494553519451e4513f4674cc1`)
+    Axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_ID}`)
       .then((response) => {
         console.log(response.data)
         setWeatherData(
